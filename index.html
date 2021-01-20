@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="src/calculator.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" >
+    
+</head>
+<body class="container">
+    <!-- onload="pageload()" -->
+    <main class="row">
+        
+<div class=" col-md-6">
+    <div class="heading">
+        <img src="https://www-static.cdn-one.com/images/onecom/one.com.svg" />
+        <div class="subtext">Test Assignment</div>
+        <div class="description">
+            <p>The task is to calculate the difference between two given dates. It covers leap years in between them as well.
+            </p>
+            <ul>
+                <li><span class="green">step 1 :</span> It validates the textboxes for values .</li>
+                <li><span class="green">step 2 :</span> If it's a matched value with date regex it goes on.</li>
+                <li><span class="green">step 3 :</span> Split the date and break it into days, months and year.</li>
+                <li><span class="green">step 4 :</span> Both months and years are converted into days from the very begining of time(00:00:0000)</li>
+                <li><span class="green">step 5 :</span> Next add all the day's, months and years to get everything in days.</li>
+                <li><span class="green">step 6 :</span> The above steps are executed for both dates </li>
+                <li><span class="green">step 6 :</span> The result is a integer for both with the day</li>
+                <li><span class="green">step 7 :</span> Both day's will be subtract to get the difference.</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="col-md-6 form-signin text-center">
+
+
+        <div class="formwrapper col-md-7 offset-3 ">
+            <img src="https://www-static.cdn-one.com/images/onecom/one.com.svg" />
+    <h5>Day Calculator</h5>
+
+
+
+	
+    <input type="text" id="datepicker1" placeholder ="Date : dd/mm/yyyy" class="form-control datebox"> 
+     <input type="text" id="datepicker2" placeholder ="Date : dd/mm/yyyy" class="form-control datebox" >
+    
+    <button id="submitbtn" class="w-100 btn btn-lg btn-primary" onclick="getValidation()">Calculate</button>
+    
+
+<div id="output"></div>
+<div id="warnings" class="warning"></div>
+</div>
+
+</div>
+
+</main>
+
+
+
+
+    
+    <!-- <script src="tests.js"></script> -->
+    
+</body>
+</html>
